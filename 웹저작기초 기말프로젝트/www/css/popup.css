@@ -1,0 +1,71 @@
+/*노랑 #F9C032 분홍 #DF5048 남색 #20313C*/
+
+body{
+	margin:0px auto; /*가운데맞춤*/
+	text-align: center;
+	background-color: #20313C;
+	color: white;
+}
+
+form {
+	margin: 0px auto; /*가운데맞춤*/
+	text-align: center;
+}
+
+label {
+	display: block;
+	font-size: 0.9em; /*폰트크기*/
+	font-weight: 600; /*폰트굵기*/
+	letter-spacing: 0.5em; /*자간*/
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	/*textarea 크기 상하로만 조절 가능하게 함*/
+	min-height: 20px;
+	min-width: 200px;
+	max-width: 200px;
+	border-radius: 0.75em; /*모서리둥글게*/
+	border: 0px;
+	display: block;
+	margin: 0px auto;
+	padding: 0 1em;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* Button */
+
+	.button {
+		border: 0px;
+		cursor: pointer; /*손가락모양*/
+		display: inline-block;
+		font-size: 0.9em; /*폰트크기*/
+		font-weight: 600; /*폰트굵기*/
+		letter-spacing: 0.5em; /*자간*/
+		text-align: center;
+		width: 220px;
+		height: 2em;
+		border-radius: 0.75em; /*모서리둥글게*/
+		padding: 0 2em;
+		margin: 20px;
+	}
+
+	.button {
+		background-color: #fff;
+		color: #DF5048 !important;
+	}
+
+	.button:hover { /*버튼에 마우스를 올리면*/
+		background-color: #DF5048;
+		color: #fff !important;
+	}
+
+	.button:active { /*버튼 클릭하면*/
+		background-color: #DC3A32;
+		color: #fff !important;
+	}

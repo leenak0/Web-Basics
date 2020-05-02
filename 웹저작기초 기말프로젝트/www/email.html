@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>고객센터</title>
+	<link rel="stylesheet" href="./css/popup.css" />
+	<script>
+		function popclose() {
+			self.opener=self;
+			window.close(); //창 닫음
+		}
+	</script>
+</head>
+<body>
+	<h2>1대1문의</h2>
+	<form method="post" action="#">
+			<label for="name">이름</label>
+			<input type="text" name="name" id="name" value="" />
+			<label for="email">이메일</label>
+			<input type="email" name="email" id="email" value="" />
+			<label for="subject">제목</label>
+			<input type="text" name="subject" id="subject" value="" />
+			<label for="message">내용</label>
+			<textarea name="message" id="message" rows="6"></textarea>
+			<!-- 버튼을 누르면 팝업창 닫힘 -->
+			<input type="submit" name="send" id="send" value="보내기" class="button" onclick="popclose()" />
+	</form>
+</body>
+</html>

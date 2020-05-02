@@ -1,0 +1,114 @@
+/*노랑 #F9C032 분홍 #DF5048 남색 #20313C*/
+
+body{
+	margin:0 auto;
+	background-color: #20313C;
+	text-align: center;
+}
+
+/* logo */
+
+#logo{
+	height: 200px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+/* login */
+
+#login{
+	font-size: 0.8em; /*폰트크기*/
+	border: 0px;
+	border-radius: 0.5em; /*모서리둥글게*/
+	background-color: #DF5048;
+	color: #fff;
+	padding: 10px;
+}
+
+#login th{
+	font-size: 1.2em; /*폰트크기*/
+	letter-spacing: 0.5em; /*자간*/
+	border: 0px;
+	border-radius: 0.5em; /*모서리둥글게*/
+	background-color: #DF5048;
+	color: #fff;
+	padding: 10px;
+}
+
+/* sign */
+
+#sign{
+	font-size: 0.8em; /*폰트크기*/
+	border: 0px;
+	border-radius: 0.5em; /*모서리둥글게*/
+	background-color: #DF5048;
+	color: #fff;
+	padding: 10px;
+}
+
+#sign th{
+	font-size: 1.2em; /*폰트크기*/
+	letter-spacing: 0.5em; /*자간*/
+	border: 0px;
+	border-radius: 0.5em; /*모서리둥글게*/
+	background-color: #DF5048;
+	color: #fff;
+	padding: 10px;
+}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		border: 0;
+		cursor: pointer; /*손가락모양*/
+		display: inline-block;
+		font-weight: 600; /*폰트굵기*/
+		letter-spacing: 0.5em; /*자간*/
+		text-align: center;
+		width: 310px;
+		height: 2.5em;
+		border-radius: 0.75em; /*모서리둥글게*/
+		padding: 0 2em;
+	}
+
+	input[type="submit"].small,
+	input[type="reset"].small,
+	input[type="button"].small,
+	button.small,
+	.small { /*작은버튼*/
+		font-size: 0.6em; /*폰트크기*/
+		letter-spacing: 0; /*자간*/
+		width: 80px;
+		height: 2em;
+	}
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		background-color: #fff;
+		color: #DF5048 !important;
+	}
+
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover,
+	button:hover,
+	.button:hover { /*버튼에 마우스를 올리면*/
+		background-color: #DF5048;
+		color: #fff !important;
+	}
+
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active,
+	button:active,
+	.button:active { /*버튼 클릭하면*/
+		background-color: #DC3A32;
+		color: #fff !important;
+	}

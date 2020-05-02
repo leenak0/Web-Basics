@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MOVIE DAY♪</title>
+	<link rel="stylesheet" href="./css/main.css" />
+	<script>
+        function popup(){
+            var url="email.html"; //email.html 팝업창을 띄움
+            window.open(url,"","location=no,width=400,height=420,left=600,top=300"); //너비 400,높이 420, 왼쪽에서 600, 위에서 300 지점에 창을 띄움
+        }
+    </script>
+</head>
+<body>
+	<nav id="top">
+		<ul>
+			<li><a href=login.html>로그인</a></li>
+			<li><a href=sign.html>회원가입</a></li>
+			<!-- 버튼을 누르면 팝업창을 띄움 -->
+			<li><a onclick="popup()">고객센터</a></li> <!-- 팝업 -->
+		</ul>
+	</nav>
+	<!-- 로고를 누르면 메인화면으로 이동 -->
+	<div id="logo"><a href="index.html"><img src="./img/logo.png" width="150px"></a></div>
+	
+	<nav id="nav">
+		<ul>
+			<li><a href="#">예매</a></li>
+			<li><a href="reserv_order.html">영화</a></li>
+			<li><a href="#">영화관</a></li>
+			<li><a href="#">이벤트</a></li>
+			<li><a href="#">매점</a></li>
+			<li><a href="mypage.html">My Page</a></li>
+		</ul>
+	</nav>
+
+<!-- 이미지 슬라이드 jquery 코드 인터넷에서 참고 -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+
+<div class="cycle-slideshow" data-cycle-fx=scrollHorz data-cycle-timeout=1500>
+<img src="./img/1.jpg" width="100%">
+<img src="./img/2.jpg" width="100%">
+<img src="./img/3.jpg" width="100%">
+<img src="./img/4.jpg" width="100%">
+</div>
+
+<div class="table_bg">
+<!-- 게시판 테이블 -->
+<table class="table" align="center">
+<tr height="40">
+<th width="20%">상영시간표</td>
+<th width="20%">박스오피스</td>
+<th width="20%">이벤트</td>
+<th width="20%">공지</td>
+</tr>
+
+<tr height="40">
+<td rowspan=5>
+	<select name="극장" >
+		<option value="노원">노원
+		<option value="중계">중계
+		<option value="상봉">상봉
+		<option value="동대문">왕십리
+	</select>
+	<select name="날짜" >
+		<option value="12월15일">12월15일
+		<option value="12월16일">12월16일
+		<option value="12월17일">12월17일
+		<option value="12월18일">12월18일
+	</select>
+	<input type="button" value="찾기">
+</td>
+<td>겨울왕국</td>
+<td>수능 할인 이벤트</td>
+<td>개인정보 이용내역 안내</td>
+</tr>
+
+<tr height="40">
+<td>쥬만지</td>
+<td>겨울왕국 상품 기획전</td>
+<td>시스템 점검 안내</td>
+</tr>
+
+<tr height="40">
+<td>포드 V 페라리</td>
+<td>12월 제휴 이벤트</td>
+<td>신규오픈 안내</td>
+</tr>
+
+<tr height="40">
+<td>나이브스 아웃</td>
+<td>백두산 시사회</td>
+<td>경품 당첨자 발표</td>
+</tr>
+
+<tr height="40">
+<td>감쪽같은 그녀</td>
+<td>크리스마스 이벤트</td>
+<td>멤버십 서비스 변경 안내</td>
+</tr>
+</table>
+</div>
+
+<!-- 배경이미지 보이기 -->
+<div class="box">
+	<br><br><br><br><br>
+	<img src="img/star2.png" width="100px">
+	<h2>노원점</h2>
+	<b>신규오픈</b>
+</div>
+
+<footer class="footer">
+    <address>Copyright 이나경-2016111566. All rights reserved.</address>
+    <address>Contact <a href="mailto:leenak0@naver.com">leenak0@naver.com</a> for more information. 010-3224-5785</address>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>회원가입</title>
+<link rel="stylesheet" href="./css/form.css" />
+</head>
+
+<body>
+	<div id="logo"><a href="index.html"><img src="./img/logo.png" width="150px"></a></div>
+<form method=post action="index.html">
+<table id="sign" align="center">
+<tr>
+<th height="40px" colspan=2>&nbsp;기본정보입력</th>
+</tr>
+
+<tr>
+<td width="150px" height="30px">&nbsp;아이디<font color="yellow">*</font></td>
+<td width="450px"><input type="text" name="ID" size=10> <input name="중복확인" type="button" value="중복확인" class="small"></td>
+</tr>
+
+<tr>
+<td height="30px">&nbsp;비밀번호<font color="yellow">*</font></td>
+<td><input type="password" size=16> 8~16자리의 영문(대/소문자),숫자만 가능합니다.</td>
+</tr>
+
+<tr>
+<td height="30px">&nbsp;비밀번호 확인<font color="yellow">*</font></td>
+<td><input type="password" size=16> 비밀번호를 다시 한번 입력해주세요.</td>
+</tr>
+
+<tr>
+<td height="30px">&nbsp;이&nbsp;름<font color="yellow">*</font></td>
+<td><input type="text" size=10> <input type="radio" name="man">남성 <input type="radio" name="man">여성</td>
+</tr>
+
+<tr>
+<td height="30px">&nbsp;생년월일<font color="yellow">*</font></td>
+<td><input size=6 type="text"> ex)971203</td>
+</tr>
+
+<tr>
+<td height="30px">&nbsp;이메일<font color="yellow">*</font></td>
+<td><input size=10 type="text"> @ <select name="이메일" ><option value="네이버">naver.com
+<option value="구글">gmail.com
+<option value="다음">daum.net
+<option value="한메일">hanmail.net
+<option value="네이트">nate.com</select></td>
+</tr>
+
+<tr>
+<td height="50px">&nbsp;주&nbsp;소<font color="yellow">*</font></td>
+<td><input size=5 name="우편번호" type="text"> <input type="button" value="찾기" class="small"><br>
+<input type="text" size=50 name="주소"></td>
+</tr>
+
+<tr>
+<td height="30px">&nbsp;전화번호</td>
+<td><input size=3 name="전번1" type="text">-<input size=4 name="전번2" type="text">-<input size=4 name="전번3" type="text"></td>
+</tr>
+
+<tr>
+<td height="30px">&nbsp;휴대폰번호<font color="yellow">*</font></td>
+<td><input size=3 name="휴번1" type="text">-<input size=4 name="휴번2" type="text">-<input size=4 name="휴번3" type="text"></td>
+</tr>
+
+<tr>
+<td height="90px">&nbsp;마케팅 동의 여부</td>
+<td><input type="checkbox" name="1">이메일 수신 동의<br>
+<input type="checkbox" name="2">SMS 수신 동의<br>
+<input type="checkbox" name="3">DM 수신 동의<br>
+<input type="checkbox" name="3">우편물 수신 동의<br></td>
+</tr>
+</table>
+
+<table align="center">
+<tr>
+<td width="600px"><font color="yellow">*</font><font font color="white" size="1">는 필수항목입니다.</font></td>
+</tr>
+</table>
+
+<br><br>
+<input type="submit" value="완료">
+<input type="reset" value="초기화">
+</form>
+
+</body>
+</html>
